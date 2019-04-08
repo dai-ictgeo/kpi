@@ -137,7 +137,7 @@ CONSTANCE_CONFIG = {
                                 'themselves'),
     'TERMS_OF_SERVICE_URL': ('http://www.kobotoolbox.org/terms',
                             'URL for terms of service document'),
-    'PRIVACY_POLICY_URL': ('http://www.kobotoolbox.org/privacy',
+    'PRIVACY_POLICY_URL': ('https://www.dai.com/privacy-policy',
                           'URL for privacy policy'),
     'SOURCE_CODE_URL': ('https://github.com/kobotoolbox/',
                         'URL of source code repository. When empty, a link '
@@ -148,7 +148,7 @@ CONSTANCE_CONFIG = {
                     'be shown in the user interface'),
     'SUPPORT_EMAIL': (os.environ.get('KOBO_SUPPORT_EMAIL') or
                         os.environ.get('DEFAULT_FROM_EMAIL',
-                                       'help@kobotoolbox.org'),
+                                       'help@daicollect.com'),
                       'Email address for users to contact, e.g. when they '
                       'encounter unhandled errors in the application'),
     'ALLOW_UNSECURED_HOOK_ENDPOINTS': (True,
