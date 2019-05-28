@@ -149,7 +149,7 @@ class LazyModelGroup:
             twitter = models.CharField(max_length=255, blank=True)
             description = models.CharField(max_length=255, blank=True)
             require_auth = models.BooleanField(
-                default=False,
+                default=True,
                 verbose_name=_(
                     "Require authentication to see forms and submit data"
                 )
