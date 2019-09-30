@@ -91,7 +91,21 @@ const ASSET_TYPES = {
   }
 }
 
+const META_QUESTION_TYPES = new Map();
+new Set([
+  'start',
+  'end',
+  'today',
+  'username',
+  'simserial',
+  'subscriberid',
+  'deviceid',
+  'phonenumber',
+  'audit'
+]).forEach((codename) => {META_QUESTION_TYPES.set(codename, codename);});
+
 export default {
+  META_QUESTION_TYPES: META_QUESTION_TYPES,
   AVAILABLE_FORM_STYLES: AVAILABLE_FORM_STYLES,
   update_states: update_states,
   VALIDATION_STATUSES: VALIDATION_STATUSES,
