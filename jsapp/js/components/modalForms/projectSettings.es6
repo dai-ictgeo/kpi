@@ -779,11 +779,11 @@ class ProjectSettings extends React.Component {
           {this.props.context !== PROJECT_SETTINGS_CONTEXTS.BUILDER &&
             <bem.FormModal__item>
               <label htmlFor='name'>
-                {t('Project Name')}
+                {t('Form Name')}
               </label>
               <input type='text'
                 id='name'
-                placeholder={t(' of project here')}
+                placeholder={t(' of form here')}
                 value={this.state.name}
                 onChange={this.onNameChange}
               />
@@ -803,7 +803,7 @@ class ProjectSettings extends React.Component {
 
           <bem.FormModal__item>
             <label className='long'>
-              {t('Please specify the country and the sector where this project will be deployed. ')}
+              {t('Please specify the country and the sector where this form will be deployed. ')}
               {/*t('This information will be used to help you filter results on the project list page.')*/}
             </label>
           </bem.FormModal__item>
