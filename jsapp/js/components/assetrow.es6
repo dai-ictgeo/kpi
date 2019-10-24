@@ -298,7 +298,7 @@ class AssetRow extends React.Component {
                 m={'cloneAsSurvey'}
                 key='cloneAsSurvey'
                 data-action={'cloneAsSurvey'}
-                data-tip={t('Create project')}
+                data-tip={t('Create form')}
                 data-asset-type={this.props.kind}
                 data-asset-name={assetName}
                 data-disabled={false}
