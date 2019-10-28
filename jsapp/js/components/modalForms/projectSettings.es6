@@ -783,7 +783,7 @@ class ProjectSettings extends React.Component {
               </label>
               <input type='text'
                 id='name'
-                placeholder={t(' of form here')}
+                placeholder={t('Name of form here')}
                 value={this.state.name}
                 onChange={this.onNameChange}
               />
