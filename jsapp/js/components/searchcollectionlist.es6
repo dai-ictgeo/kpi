@@ -196,13 +196,13 @@ class SearchCollectionList extends Reflux.Component {
     var docTitle = '';
     if (this.props.searchContext.store.filterTags == 'asset_type:survey') {
       var display = 'grouped';
-      docTitle = t('Projects');
+      docTitle = t('Forms');
     } else {
       var display = 'regular';
       docTitle = t('Library');
     }
     return (
-      <DocumentTitle title={`${docTitle} | KoboToolbox`}>
+      <DocumentTitle title={`${docTitle} | Collect`}>
         <Dropzone
           onDrop={this.dropFiles}
           disableClick
