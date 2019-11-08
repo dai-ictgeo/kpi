@@ -1149,7 +1149,7 @@ class Reports extends React.Component {
     const hasGroupBy = this.state.groupBy.length !== 0;
 
     return (
-      <DocumentTitle title={`${docTitle} | KoboToolbox`}>
+      <DocumentTitle title={`${docTitle} | DAI Collect`}>
         <bem.FormView m={formViewModifiers}>
           <bem.ReportView>
             {this.renderReportButtons()}
