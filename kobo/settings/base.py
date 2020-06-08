@@ -153,6 +153,10 @@ CONSTANCE_CONFIG = {
                          'Number of times the system will retry '
                          'to send data to remote server before giving up')
 }
+
+
+CONSTANCE_CONFIG['TITLE_SITE_NAME'] = ('KoBoToolbox', 'Default site name that appears in title strings')
+
 # Tell django-constance to use a database model instead of Redis
 CONSTANCE_BACKEND = 'constance.backends.database.DatabaseBackend'
 

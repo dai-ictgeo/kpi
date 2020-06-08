@@ -807,7 +807,7 @@ export default assign({
     var docTitle = this.state.name || t('Untitled');
 
     return (
-      <DocumentTitle title={`${docTitle} | KoboToolbox`}>
+      <DocumentTitle title={`${docTitle} | ${stores.session.environment.title_site_name}`}>
         <ui.Panel m={['transparent', 'fixed']}>
           {this.renderAside()}
 

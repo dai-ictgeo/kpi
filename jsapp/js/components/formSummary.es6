@@ -338,7 +338,7 @@ class FormSummary extends React.Component {
     }
 
     return (
-      <DocumentTitle title={`${docTitle} | KoboToolbox`}>
+      <DocumentTitle title={`${docTitle} | ${stores.session.environment.title_site_name}`}>
         <bem.FormView m='summary'>
           <bem.FormView__column m='left'>
             {(this.state.settings && (this.state.settings.country || this.state.settings.sector || this.state.settings.description)) &&
