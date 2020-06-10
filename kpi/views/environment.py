@@ -19,7 +19,10 @@ class EnvironmentView(APIView):
         'SOURCE_CODE_URL',
         'SUPPORT_URL',
         'SUPPORT_EMAIL',
-        'TITLE_SITE_NAME'
+        'TITLE_SITE_NAME',
+        'PROJECT_LOGO',
+        'PROJECT_LOGO_SMALL',
+        'PROJECT_LOGIN_BACKGROUND',
     ]
 
     def get(self, request, *args, **kwargs):

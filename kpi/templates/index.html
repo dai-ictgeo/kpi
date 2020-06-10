@@ -33,18 +33,18 @@
       <script>window.html5 || document.write('<script src="{% static 'js/vendor/html5shiv.js' %}"><\/script>')</script>
     <![endif]-->
 
-    {% if config.logo %}
+    {% if config.PROJECT_LOGO %}
       <style>
         .mdl-layout__header .header__logo {
-          background-image: url("{{ config.logo }}") !important;
+          background-image: url("{{ config.PROJECT_LOGO }}") !important;
         }
       </style>
     {% endif %}
-    {% if config.logo_small %}
+    {% if config.PROJECT_LOGO_SMALL %}
       <style>
         @media screen and (max-width: 767px) {
           .mdl-layout__header .header__logo {
-            background-image: url("{{ config.logo_small }}") !important;
+            background-image: url("{{ config.PROJECT_LOGO_SMALL }}") !important;
           }
         }
       </style>

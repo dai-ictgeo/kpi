@@ -155,7 +155,11 @@ CONSTANCE_CONFIG = {
 }
 
 
-CONSTANCE_CONFIG['TITLE_SITE_NAME'] = ('KoBoToolbox', 'Default site name that appears in title strings')
+CONSTANCE_CONFIG['TITLE_SITE_NAME'] = ('DAI Collect', 'Default site name that appears in title strings')
+CONSTANCE_CONFIG['PROJECT_LOGO'] = ('https://dai-collect-branding.s3.amazonaws.com/dai-collect-default-logo.svg', 'Logo that appears on login page and header')
+CONSTANCE_CONFIG['PROJECT_LOGO_SMALL'] = ('https://dai-collect-branding.s3.amazonaws.com/dai-collect-default-logo-small.svg', 'Logo that appears on login page and header when screen size is below 767px')
+CONSTANCE_CONFIG['PROJECT_LOGIN_BACKGROUND'] = ('https://dai-collect-branding.s3.amazonaws.com/dai-collect-default-login-background.jpg', 'Background image that appears on the login and registration page.')
+
 
 # Tell django-constance to use a database model instead of Redis
 CONSTANCE_BACKEND = 'constance.backends.database.DatabaseBackend'

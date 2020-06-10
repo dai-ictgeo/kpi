@@ -2,10 +2,10 @@
 
 {%block head %}
   {% load static %}
-  {% if config.login_background %}
+  {% if config.PROJECT_LOGIN_BACKGROUND %}
   <style>
   .registration__bg {
-    background: url("{{ config.login_background }}");
+    background: url("{{ config.PROJECT_LOGIN_BACKGROUND }}");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -14,8 +14,8 @@
 {% endblock %}
 
 {% block logo %}
-    {% if config.logo %}
-        <img src="{{ config.logo }}"/>
+    {% if config.PROJECT_LOGO %}
+        <img src="{{ config.PROJECT_LOGO }}"/>
     {% else %}
         <img src="{% static 'img/kobologo.svg' %}"/>
     {% endif %}
@@ -25,7 +25,7 @@
 {% endblock %}
 
 {% block background_credit %}
-    {% if not config.login_background %}
+    {% if not config.project_login_background %}
     {# Show the background image credit only if we're using the default image #}
     <div class="registration__credit">
         <a href="https://flic.kr/p/9v4mC5" title="Muhkjar refugee camp" target="_blank">
