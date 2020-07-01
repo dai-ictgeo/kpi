@@ -156,10 +156,13 @@ CONSTANCE_CONFIG = {
 
 
 CONSTANCE_CONFIG['TITLE_SITE_NAME'] = ('DAI Collect', 'Default site name that appears in title strings')
-CONSTANCE_CONFIG['PROJECT_LOGO'] = ('https://dai-collect-branding.s3.amazonaws.com/dai-collect-default-logo.svg', 'Logo that appears on login page and header')
-CONSTANCE_CONFIG['PROJECT_LOGO_SMALL'] = ('https://dai-collect-branding.s3.amazonaws.com/dai-collect-default-logo-small.svg', 'Logo that appears on login page and header when screen size is below 767px')
-CONSTANCE_CONFIG['PROJECT_LOGIN_BACKGROUND'] = ('https://dai-collect-branding.s3.amazonaws.com/dai-collect-default-login-background.jpg', 'Background image that appears on the login and registration page.')
-
+CONSTANCE_CONFIG['PROJECT_LOGO'] = ('https://dai-collect-branding.s3.amazonaws.com/DAI/dai-collect-default-logo.svg', 'Logo that appears on login page and header')
+CONSTANCE_CONFIG['PROJECT_LOGO_SMALL'] = ('https://dai-collect-branding.s3.amazonaws.com/DAI/dai-collect-default-logo-small.svg', 'Logo that appears on login page and header when screen size is below 767px')
+CONSTANCE_CONFIG['PROJECT_LOGIN_BACKGROUND'] = ('https://dai-collect-branding.s3.amazonaws.com/DAI/dai-collect-default-login-background.jpg', 'Background image that appears on the login and registration page.')
+CONSTANCE_CONFIG['PROJECT_FAVICON'] = ('https://dai-collect-branding.s3.amazonaws.com/DAI/favicon.ico', 'Favicon for the project')
+CONSTANCE_CONFIG['PROJECT_FAVICON_16'] = ('https://dai-collect-branding.s3.amazonaws.com/DAI/favicon-16x16.png', 'Favicon size 16x16 for the project')
+CONSTANCE_CONFIG['PROJECT_FAVICON_32'] = ('https://dai-collect-branding.s3.amazonaws.com/DAI/favicon-32x32.png', 'Favicon size 32x32 for the project')
+CONSTANCE_CONFIG['PROJECT_APPLE_TOUCH_ICON'] = ('https://dai-collect-branding.s3.amazonaws.com/DAI/apple-touch-icon.png', 'Apple touch icon for the project')
 
 # Tell django-constance to use a database model instead of Redis
 CONSTANCE_BACKEND = 'constance.backends.database.DatabaseBackend'

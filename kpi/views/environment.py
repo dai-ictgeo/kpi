@@ -23,6 +23,10 @@ class EnvironmentView(APIView):
         'PROJECT_LOGO',
         'PROJECT_LOGO_SMALL',
         'PROJECT_LOGIN_BACKGROUND',
+        'PROJECT_FAVICON',
+        'PROJECT_FAVICON_16',
+        'PROJECT_FAVICON_32',
+        'PROJECT_APPLE_TOUCH_ICON',
     ]
 
     def get(self, request, *args, **kwargs):

@@ -14,15 +14,15 @@
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>KoBoToolbox {% block title %}{% endblock %}</title>
+<title>{{config.TITLE_SITE_NAME}} {% block title %}{% endblock %}</title>
 <meta name="description" content="{{config.TITLE_SITE_NAME}} uses KoBoToolbox, a free toolkit for collecting and managing data in challenging environments and is the most widely-used tool in humanitarian emergencies">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}" />
+<link rel="icon" type="image/x-icon" href="{{ config.PROJECT_FAVICON }}" />
 <!-- iPhone + iPad icons -->
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'img/apple-touch-icon-114x114.png' %}">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'img/apple-touch-icon-72x72-precomposed.png' %}">
 <link rel="apple-touch-icon-precomposed" href="{% static 'img/apple-touch-icon-precomposed.png' %}">
-<link rel="apple-touch-icon" href="{% static 'img/apple-touch-icon.png' %}">
+<link rel="apple-touch-icon" href="{{ config.PROJECT_APPLE_TOUCH_ICON }}" />
 {% block head %}{% endblock %}
 </head>
 <body>
