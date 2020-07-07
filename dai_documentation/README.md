@@ -3,10 +3,12 @@
 1. We have forked the main kobotoolbox/kpi
    * We could do similar with kobotoolbox/kobocat if needed
 1. We have made a dai-collect branch for our repo
+   * We could choose to make this the default branch in github.
 1. We have made changes to those dai-collect branch
 1. We test those changes on a dev/staging site with local files
 1. Once changes are complete, we tag our version of the dai-collect branch 
 1. Rebuild docker image in docker hub
+   * This happens automatically with a build rule based on tag name. For some reason it triggers twice.
 1. On staging we change the docker-compose.frontend.override.yml
 1. Testing on staging
 1. On production we change the docker-compose.frontend.override.yml
