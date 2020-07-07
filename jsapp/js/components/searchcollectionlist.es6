@@ -202,8 +202,16 @@ class SearchCollectionList extends Reflux.Component {
       display = 'regular';
       docTitle = t('Library');
     }
+
+    var titleSiteName = '';
+    try {
+      titleSiteName = stores.session.environment.title_site_name;
+    } catch(err) {
+      console.log('Did not load environment yet. Hopefully will on next page load.');
+    }
+
     return (
-      <DocumentTitle title={`${docTitle} | ${stores.session.environment.title_site_name}`}>
+      <DocumentTitle title={`${docTitle} | ${titleSiteName}`}>
         <Dropzone
           onDrop={this.dropFiles}
           disableClick
